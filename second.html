@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sequence Alignment</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+        
+        header {
+            background: #081a32;
+            color: white;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            color: #00c2ff;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        
+        section {
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        
+        .card-container {
+            display: flex;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .alignment-img {
+            display: block;
+            margin: 30px auto;
+            width: 300px;
+        }
+        
+        ul {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Protein Analysis</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second.html">Alignment</a>
+            <a href="third.html">Modeling</a>
+            <a href="fourth.html">Tools</a>
+            <a href="fifth.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <h1 class="page-title">Sequence Alignment</h1>
+
+
+    <section>
+
+        <h2>What is Sequence Alignment?</h2>
+
+        <p>
+            Sequence alignment is a bioinformatics method used to compare DNA, RNA, or protein sequences to identify regions of similarity. These similarities help researchers understand evolutionary relationships, predict structure, and determine functional regions
+            of biological sequences.
+        </p>
+
+        <img class="alignment-img" src="https://training.galaxyproject.org/training-material/topics/evolution/tutorials/abc_intro_phylo-msa/images/03-msa-03-c-good1.pdf-1.png">
+
+    </section>
+
+
+
+    <section>
+
+        <h2>Types of Sequence Alignment</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Pairwise Alignment</h3>
+                <p>Compares two sequences to identify the best possible match between them.</p>
+            </div>
+
+            <div class="card">
+                <h3>Multiple Sequence Alignment</h3>
+                <p>Aligns three or more sequences to detect conserved regions and evolutionary patterns.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section>
+
+        <h2>Common Algorithms</h2>
+
+        <ul>
+            <li>Needleman–Wunsch — Used for global alignment.</li>
+            <li>Smith–Waterman — Performs local sequence alignment.</li>
+            <li>BLAST — Quickly finds similarity between biological sequences.</li>
+        </ul>
+
+    </section>
+
+
+
+
+</body>
+
+</html>

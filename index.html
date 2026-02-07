@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Protein Structure Analysis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* HERO BACKGROUND */
+        
+        .hero {
+            height: 100vh;
+            background: url('https://as1.ftcdn.net/v2/jpg/09/36/32/34/1000_F_936323421_bIVbhoClvd40XNNONaWiTR22poeM0yfI.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        /* DARK OVERLAY */
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.72);
+        }
+        /* HEADER */
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+        }
+        
+        header h1 {
+            color: white;
+            font-size: 26px;
+        }
+        /* NAV */
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #00c2ff;
+        }
+        /* HERO TEXT */
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            max-width: 1100px;
+            padding: 20px;
+        }
+        
+        .hero-content h2 {
+            font-size: 54px;
+            margin-bottom: 20px;
+            white-space: nowrap;
+        }
+        
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Protein Analysis</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second.html">Alignment</a>
+            <a href="modeling.html">Modeling</a>
+            <a href="third.html">Tools</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h2>Protein Structure Analysis</h2>
+
+            <p>
+                Understanding sequence alignment and homology modeling in structural bioinformatics.
+            </p>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

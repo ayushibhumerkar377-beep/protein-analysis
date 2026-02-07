@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homology Modeling </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #0b1f3a;
+            z-index: 1000;
+        }
+        
+        header h1 {
+            color: rgb(255, 252, 252);
+            font-family: 'Montserrat';
+        }
+        
+        nav a {
+            color: rgb(253, 253, 253);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            color: #00c2ff;
+        }
+        
+        .page-hero {
+            padding: 35px 0;
+            margin-top: 10px;
+            background: linear-gradient(to right, 0b1f3a, #163d6b);
+            color: rgb(34, 32, 32);
+            text-align: center;
+        }
+        
+        .page-hero h2 {
+            font-size: 40px;
+            font-family: 'Montserrat';
+        }
+        
+        section {
+            padding: 30px 10px;
+        }
+        
+        h3 {
+            font-family: 'Montserrat';
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        
+        .model-img {
+            width: 35%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        
+        .card-container {
+            display: flex;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            flex: 1;
+            padding: 25px;
+            border-radius: 10px;
+            background: #eef2f7;
+            transition: 3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        ul {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Protein Analysis</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second.html">Alignment<a>
+            <a href="third.html">Modeling</a>
+            <a href="fourth.html">Tools</a>
+            <a href="fifth.html">About</a>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <h2>Homology Modeling</h2>
+    </div>
+
+    <section>
+        <h3>What is Homology Modeling?</h3>
+
+        <p> Homology Modeling is a computational method used to predict the 3D structure of a protein based on its similarity to a known protein structure. Since protein structure determines function, this technique plays a critical role in structural bioinformatics,
+            drug discovery, and molecular biology research.
+        </p>
+        <img class="model-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Protein_ARF4_%282%29_PDB_1z6x.png/640px-Protein_ARF4_%282%29_PDB_1z6x.png">
+
+    </section>
+
+    <section>
+        <h3>Steps of Homology Modeling</h3>
+
+        <div class="card-container">
+            <div class="card">
+                <h4>1.Template Selection</h4>
+                <p> Identify a known protein structure similar to the target sequence.</p>
+            </div>
+
+            <div class="card">
+                <h4>2.Sequence Alignment</h4>
+                <p> Align the target protein sequence with the template.</p>
+            </div>
+
+            <div class="card">
+                <h4>3.Model Building</h4>
+                <p> Construct the 3D structure using computational tools.</p>
+            </div>
+
+            <div class="card">
+                <h4>4.Model Validation</h4>
+                <p> Evaluate the accuracy and quality of the predicted model.</p>
+            </div>
+    </section>
+
+    <section>
+        <h3>Applications</h3>
+
+        <ul>
+            <li>Drug design and vaccine development</li>
+            <li>Understanding genetic mutations </li>
+            <li>Protein function predication</li>
+            <li>Disease research</li>
+        </ul>
+    </section>
+
+
+</body>
+
+</html>

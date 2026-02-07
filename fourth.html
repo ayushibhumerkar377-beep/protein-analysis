@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioinformatics tools</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #0b1f3a;
+            z-index: 1000;
+        }
+        
+        header h1 {
+            color: white;
+            font-family: 'Montserrat';
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            color: #00c2ff;
+        }
+        
+        .page-hero {
+            padding: 40px;
+            background: #ffffff;
+            color: #0b1f3a;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .page-hero h2 {
+            font-size: 40px;
+            font-family: 'montserrat';
+        }
+        
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+        
+        .tool-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .tool-card {
+            background: #f7f9fc;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-8px) box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-card h3 {
+            font-family: 'montserrat';
+            margin-bottom: 10px;
+        }
+        
+        .tool-card p {
+            font-size: 15px;
+        }
+        
+        .tool-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background: #00c2ff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .tool-card a:hover {
+            background: #009fd1;
+        }
+        
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Protein Analysis</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second.html">Alignment</a>
+            <a href="third.html"> Modeling</a>
+            <a href="fourth.html">Tools</a>
+            <a href="fifth.html">About</a>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <h2>Bioinformatics Tools</h2>
+    </div>
+
+    <section>
+
+        <h2 style="font-family:Montserrat;">
+            Popular Tools Used in Protein Analysis
+        </h2>
+
+        <div class="tool-container">
+
+            <div class="tool-card">
+                <h3>Blast</h3>
+                <p>Compares protein or DNA sequences to identify similarities and evolutionary relationship. </p>
+                <a href="" target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Clustal Omega</h3>
+                <p>A powerful tool for multiple sequence alignment used in phylogenetic analysis.</p>
+                <a href="https://www.bing.com/ck/a?!&&p=696d7458e5a0ee455b2fc2b9707389fecfd8bdf0171c34ec5cb391e4d3df6f70JmltdHM9MTc2OTkwNDAwMA&ptn=3&ver=2&hsh=4&fclid=2d38795c-addf-6a32-135a-6cd3ac0a6b4f&psq=clustal+omega&u=a1aHR0cHM6Ly93d3cuZWJpLmFjLnVrL2pkaXNwYXRjaGVyL21zYS9jbHVzdGFsbz9vdXRmbXQ9ZmE"
+                    target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>SWISS-MODEL</h3>
+                <p>Automated protein structure homology-modeling server.</p>
+                <a href="https://swissmodel.expasy.org/" target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>PyMOL</h3>
+                <p>Widely used molecular visualization system for rendering 3D protein structures.</p>
+                <a href="https://pymol.org/" target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>UniProt</h3>
+                <p>A comprehensive database for protein sequence and functional information.</p>
+                <a href="https://www.uniprot.org/" target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Protein Data Bank (PDB)</h3>
+                <p>A global repository for 3D structural data of proteins and nucleic acids used in biological research.</p>
+                <a href="https://www.rcsb.org/" target="_blank">Visit Tool</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>MODELLER</h3>
+                <p>A widely used software for homology or comparative modeling of protein 3D structures.</p>
+                <a href="https://salilab.org/modeller/" target="_blank">Visit Tool</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
